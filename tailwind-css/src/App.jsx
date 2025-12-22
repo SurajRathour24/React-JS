@@ -1,12 +1,9 @@
 import React from 'react'
-import card from './components/card'
 
 const App = () => {
   return (
     <div>
-
-
-      {card()}
+      <h1 className='bg-red-500'>Tailwind CSS</h1>
     </div>
   )
 }

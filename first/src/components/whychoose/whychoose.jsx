@@ -1,6 +1,6 @@
 import React from 'react'
 
-const whychoose = () => {
+const Whychoose = () => {
   return (
     <div>
         <section class="bg-gray-50 py-20">
@@ -68,4 +68,4 @@ const whychoose = () => {
   )
 }
 
-export default whychoose
+export default Whychoose

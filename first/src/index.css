@@ -1,9 +1,22 @@
-*{
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
-body{
-  background-color: black;
-  color: #fff;
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+.our-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.width-300 {
+    width: 300px;
 }
