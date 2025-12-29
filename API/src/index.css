@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================= */
+/* Dark Theme Base */
+/* ============================= */
+body {
+  min-height: 100vh;
+  background-color: #0f0f0f;     /* Deep dark background */
+  color: #e5e5e5;               /* Soft white text */
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+button{
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
