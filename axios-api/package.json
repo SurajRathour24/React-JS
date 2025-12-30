@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "axios-api",
   "private": true,
   "version": "0.0.0",
   "type": "module",

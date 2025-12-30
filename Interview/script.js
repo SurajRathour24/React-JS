@@ -43,3 +43,7 @@ try to print value in console intantly after update so it will show the prevoius
 Syntx: Const[val, setval] = usestate(val)
 val == Read only
 setval == write only
+
+
+
+10: UseEffect: Mounting: Jab jab koi change krunga useeffect chlega
