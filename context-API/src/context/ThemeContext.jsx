@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { createContext } from 'react'
 
-const ThemeContext = () => {
+export let ThemeData = createContext()
+
+const ThemeContext = (props) => {
   return (
     <div>
-      
+      {/* <h1>Theme Context</h1> */}
+      <ThemeData.Provider value='Dark'>
+          {props.children}
+      </ThemeData.Provider>
     </div>
   )
 }

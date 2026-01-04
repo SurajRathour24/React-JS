@@ -9,7 +9,10 @@ const App = () => {
 
   return (
     <div>
-      <Navbar theme={theme} />
+      <Navbar theme={theme}>
+        <h3>This is Navbar</h3>
+        <h3>This is Sidebar</h3>
+      </Navbar>
     </div>
   )
 }
