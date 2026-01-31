@@ -1,9 +1,10 @@
 import React from 'react'
+import Cards from './components/Cards'
 
 const App = () => {
   return (
-    <div>
-      <h1>My App</h1>
+    <div className='h-screen flex justify-center align-middle items-center'>
+      {Cards()}
     </div>
   )
 }
