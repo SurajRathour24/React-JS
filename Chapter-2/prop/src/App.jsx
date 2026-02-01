@@ -1,34 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Card from './components/Card'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  
+let employees = [
+  {
+    empID: 101,
+    name: "Rohit Sharma",
+    designation: "UI Developer",
+    company: "Telisky",
+    age: 28,
+    img: "https://picsum.photos/seed/rohit/200/300",
+    blood: "B+"
+  },
+  {
+    empID: 102,
+    name: "Neha Verma",
+    designation: "React Developer",
+    company: "Telisky",
+    age: 25,
+    img: "https://picsum.photos/seed/neha/200/300",
+    blood: "O+"
+  },
+  {
+    empID: 103,
+    name: "Aman Gupta",
+    designation: "Backend Developer",
+    company: "Telisky",
+    age: 32,
+    img: "https://picsum.photos/seed/aman/200/300",
+    blood: "AB+"
+  }
+];
 
+  
+  
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='flex gap-5'>
+      {employees.map(function(emp){
+        return < Card empID={emp.empID} name={emp.name} age={emp.age} img={emp.img} designation={emp.designation} company={emp.company} />;
+      })}
+    </div>
   )
 }
 
