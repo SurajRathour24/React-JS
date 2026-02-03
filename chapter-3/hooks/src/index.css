@@ -6,4 +6,28 @@
 body{
   background-color: #111;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 40px;
+  background-color: gray;
+}
+h1{
+  background-color: darkslategray;
+  padding: 40px;
+  border-radius: 10px;
 }
