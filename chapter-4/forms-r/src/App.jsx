@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 const App = () => {
 
+  const [input, setinput] = useState("")
 
   let submitHandler = (e) =>{
     console.log("Form Submitted");
@@ -15,8 +16,9 @@ const App = () => {
     <div>
       <form action="" onSubmit={submitHandler}>
 
-    <input type="text" placeholder='Enter Your Name' onChange={function(e){
-      console.log(e.target.value);
+    <input type="text" placeholder='Enter Your Name' value={input} onChange={function(e){
+      // console.log(e.target.value);
+      setinput(e.target.value);
       
     }} />
     <button> Submit Now </button>
