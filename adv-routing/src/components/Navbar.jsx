@@ -31,7 +31,7 @@ const Navbar = () => {
               {/* Sub Menu */}
               <ul className="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <li className="px-4 py-2 hover:bg-gray-100 hover:text-indigo-600">
-                  <Link to='/products/men'>Men</Link>
+                  <Link to='/product/men'>Men</Link>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-100 hover:text-indigo-600">
                   

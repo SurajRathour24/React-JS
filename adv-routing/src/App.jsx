@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
+import Innertemp from "./Templates/Innertemp";
+import Notfound from "./pages/Notfound";
 
 const App = () => {
   return (
@@ -17,7 +19,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/product" element={<Product />} > 
+          <Route path="men" element={<Innertemp />} />
+        </Route>
+        <Route path="*" element={<Notfound />} />
       </Routes>
       <Footer />
     </div>

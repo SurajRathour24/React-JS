@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 const Product = () => {
   return (
@@ -49,9 +50,12 @@ const Product = () => {
             </div>
           </div>
         </div>
+        <Outlet />
       </section>
     </div>
+
+
+
   );
 };
-
 export default Product;
