@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 
 const App = () => {
 
-  const [input, setinput] = useState("")
+  const [val, setval] = useState("")
 
   let submitHandler = (e) =>{
-    console.log("Form Submitted");
+    console.log("Form Submitted by", val);
     e.preventDefault();
-    setinput("");
+    setval("");
   }
 
 
@@ -17,9 +17,9 @@ const App = () => {
     <div>
       <form action="" onSubmit={submitHandler}>
 
-    <input type="text" placeholder='Enter Your Name' value={input} onChange={function(e){
+    <input type="text" placeholder='Enter Your Name' value={val} onChange={function(e){
       console.log(e.target.value);
-      setinput(e.target.value);
+      setval(e.target.value);
       
     }} />
     <button> Submit Now </button>
@@ -27,7 +27,7 @@ const App = () => {
       </form>
 <br/>
 <div className='center-div'>
-      <p>Form Submitted By <span>{input}</span> </p>
+      <p>Form Submitted By <span>{val}</span> </p>
 </div>
     </div>
   )
