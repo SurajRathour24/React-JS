@@ -23,7 +23,7 @@ const App = () => {
           <Route path="men" element={<Innertemp />} />
           <Route path="women" element={<Innertemp />} />
         </Route>
-        <Route path="*" element={<Notfound />} />
+        <Route path="*" element={<Notfound />} /> 
       </Routes>
       <Footer />
     </div>

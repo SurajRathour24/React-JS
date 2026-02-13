@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
-const NotesForm = () => {
+const NotesForm = ({ addNote }) => {
+
+  const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
+
 
   let formSubmission = (e) =>{
     e.preventDefault();
-    console.log("Controlling Form");
-    
+    console.log("Controlling Form and got value of", title, desc);
+
+    if (!title || !desc) return;
+
+    addNote({
+      id: Date.now(),
+      title: title,
+      desc: desc,
+    });
+
+    setTitle("");
+    setDesc("");
   }
   return (
     <div className="form-wrapper-box">
@@ -21,7 +35,11 @@ const NotesForm = () => {
               Note Title
             </label>
             <input
+             onChange={(e) => {
+              setTitle(e.target.value)
+             }}
               type="text"
+              value={title}
               placeholder="Enter title"
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
@@ -33,6 +51,10 @@ const NotesForm = () => {
             </label>
             <textarea
               rows="4"
+              value={desc}
+               onChange={(e) => {
+              setDesc(e.target.value)
+             }}
               placeholder="Write your note..."
               className="w-full px-4 py-2 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500"
             ></textarea>
