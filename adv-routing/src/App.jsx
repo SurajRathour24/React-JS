@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Innertemp from "./Templates/Innertemp";
 import Notfound from "./pages/Notfound";
+import Courses from "./pages/Courses";
+import CourseDetail from "./pages/CourseDetail";
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
           <Route path="men" element={<Innertemp />} />
           <Route path="women" element={<Innertemp />} />
         </Route>
+        <Route path="/courses" element={< Courses />} />
+        <Route path="/courses/:courseId" element={< CourseDetail />} />
         <Route path="*" element={<Notfound />} /> 
       </Routes>
       <Footer />
