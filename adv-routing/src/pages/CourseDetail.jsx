@@ -12,6 +12,7 @@ const CourseDetail = () => {
         navigate(-1);
     }
     
+    
 
   return (
     <section className="min-h-screen bg-gray-50 py-12 px-4">
