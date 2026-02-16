@@ -9,7 +9,7 @@ const Navbar = () => {
         
         {/* Logo */}
         <div className="text-2xl font-bold text-indigo-600">
-          <Link to='/'>MyBrand</Link>
+          <Link to='/'>MyDevBrand</Link>
           
         </div>
 

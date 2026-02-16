@@ -24,7 +24,7 @@ const Notfound = () => {
 
           {/* Description */}
           <p className="text-gray-300 mt-4 mb-8">
-            Oops! The page you're looking for doesn't exist or has been moved.
+            Oops! The page you're looking for doesn't exist or has been removed.
             Let's get you back to safety.
           </p>
 
